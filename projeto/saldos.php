@@ -16,4 +16,8 @@ foreach ($saldos as $saldo) {
 // Sort para ordenação crescente de array
 sort($saldos);
 
-echo "O menor saldo é $saldos[0]";
+echo "O menor saldo é $saldos[0]" . PHP_EOL;
+
+$quantidadeSaldos = sizeof($saldos);
+
+echo "O maior saldo é " . $saldos[--$quantidadeSaldos];
