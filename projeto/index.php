@@ -1,6 +1,8 @@
 <?php
 
-require 'Calculadora.php';
+namespace Alura;
+
+require 'autoload.php';
 
 /*
 Forma basica de declaração de arrays seria:
