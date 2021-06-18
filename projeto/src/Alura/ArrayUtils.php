@@ -13,4 +13,16 @@ class ArrayUtils
       echo "Não foi encontrado no array";
     }    
   }
+
+  public static function encontrarPessoasComSaldoMaior(int $saldo, array $array): array {
+
+    $correntistasComSaldoMaior = array();
+    foreach ($array as $chave => $valor) {
+      if ($valor > $saldo) {
+        $correntistasComSaldoMaior[] = $chave;
+      }
+    }
+
+    return $correntistasComSaldoMaior;
+  }
 }
